@@ -13,20 +13,16 @@ class ImageViewController: UIViewController {
     //================
     // MARK: - Variables
     //================
+    
+    /// variable to store image clicked from Dashboard
     var image: UIImage?
 
     //=============
     // MARK: Outlets
     //=============
-    @IBOutlet weak var caprturesImageView: UIImageView!
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false 
-    }
-
-}
-
-extension ImageViewController {
+    /// image view to display captured image
+    @IBOutlet weak var caprturesImageView: UIImageView!
 
     //=================
     // MARK: - Overrides
@@ -35,14 +31,17 @@ extension ImageViewController {
         super.viewDidLoad()
         initView()
     }
-
-}
-
-extension ImageViewController {
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        /// this will hide the navigation bar
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     //================
     // MARK: - Methods
     //================
+    
+    /// this function will display captured image into image view
     func initView() {
         caprturesImageView.image = image
     }

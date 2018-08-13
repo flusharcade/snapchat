@@ -10,12 +10,8 @@ import MobileCoreServices
 import AVFoundation
 
 class DashboardViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    @IBAction func btnAddMe(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddMeViewController") as! AddMeViewController
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-
+    
+    /// this will initialize camera view
     @IBOutlet weak var cameraView: UIView! {
         didSet {
             cameraView.layer.mask = maskLayer
@@ -25,21 +21,22 @@ class DashboardViewController: UIViewController, UIImagePickerControllerDelegate
     //===================
     // MARK: Lazy Loadings
     //===================
+    
+    /// this defines camera manager
     lazy var cameraManager: CameraManager = {
         let this = CameraManager()
         return this
     }()
     
+    /// this defines the mask that is added above the rectangle camera layer
     lazy var maskLayer: CALayer = {
         let this = CALayer()
-        this.backgroundColor = UIColor(red: 0/255,
-                                       green: 0/255,
-                                       blue: 0/255,
-                                       alpha: 0.5).cgColor
+        this.backgroundColor = UIColor(red: 0/255,green: 0/255,blue: 0/255,alpha: 0.5).cgColor
         this.addSublayer(rectLayer)
         return this
     }()
     
+    /// this defines the rectangle area that will capture the image
     lazy var rectLayer: CAShapeLayer = {
         let this = CAShapeLayer()
         this.fillColor = UIColor.black.cgColor
@@ -47,39 +44,19 @@ class DashboardViewController: UIViewController, UIImagePickerControllerDelegate
         return this
     }()
     
-    lazy var rectPath: UIBezierPath = {
-        let this = UIBezierPath()
-        return this
-    }()
-    
-    lazy var useFrontTextLayer: CATextLayer = {
-        let this = CATextLayer()
-        return this
-    }()
-    
-    lazy var tapHereToCaptureTextLayer: CATextLayer = {
-        let this = CATextLayer()
-        return this
-    }()
-    @IBAction func btnClickPicture(_ sender: Any) {
-        captureAndCropp()
-    }
-    
-}
-
-extension DashboardViewController {
-    
     //=================
     // MARK: - Overrides
     //=================
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         do {
+            /// this will setup the camera as soon as the screen is loaded
             try cameraManager.captureSetup(in: cameraView, withPosition: .back)
         } catch {
-            let alertController = UIAlertController(title: "Error",
-                                                    message: error.localizedDescription,
-                                                    preferredStyle: .alert)
+            
+            /// Alert will be displayed if any error is there in camera setup
+            let alertController = UIAlertController(title: "Error",message: error.localizedDescription,preferredStyle: .alert)
             alertController.addAction(.init(title: "ok", style: .default, handler: nil))
             present(alertController, animated: true, completion: nil)
         }
@@ -87,56 +64,59 @@ extension DashboardViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true 
+        ///this will hide navigation bar
+        self.navigationController?.navigationBar.isHidden = true
+        ///this prepares camera to capture picture
         cameraManager.startRunning()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        ///this prepares camera to close as the screen is dismissed
         cameraManager.stopRunning()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        navigationController?
-            .interactivePopGestureRecognizer?
-            .isEnabled = true
+        ///The gesture recognizer responsible for popping the top view controller off the navigation stack.
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
+        /// this will change orientation of the camera when view is transitioning
         cameraManager.transitionCamera()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        /// this will Update frame of camera preview
         self.cameraManager.updatePreviewFrame()
         drawOverRectView()
     }
     
+    /// this will pass the captured image to the imag view to display
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "CameraView2ImageView",
+        guard segue.identifier == "CapturedImage",
             let imageViewController = segue.destination as? ImageViewController,
             let image = sender as? UIImage else {
                 return
-        }
+            }
         imageViewController.image = image
     }
-    
-}
 
-extension DashboardViewController {
-    
     //================
     // MARK: - Methods
     //================
+    
+    /// this func will capture picture and crop it
     func captureAndCropp() {
         cameraManager.getImage(croppWith: self.rectLayer.frame) { (croppedImage, _) -> Void in
             guard let croppedImage = croppedImage else {
                 return
             }
             DispatchQueue.main.async {
-                self.performSegue(withIdentifier: "CameraView2ImageView",
+                self.performSegue(withIdentifier: "CapturedImage",
                                   sender: croppedImage)
             }
         }
@@ -188,17 +168,32 @@ extension DashboardViewController {
         maskLayer.frame = cameraView.bounds
     }
     
-}
-
-@objc extension DashboardViewController {
-    
     //=================
     // MARK: - Selectors
     //=================
     
-    @IBAction func tapGestureAction(_ sender: Any) {
+    /// this func will be called to click picture
+    @IBAction func btnClickPicture(_ sender: Any) {
         captureAndCropp()
     }
     
+    /// this func will be called when add me button is clicked
+    @IBAction func btnAddMe(_ sender: UIButton) {
+        let AddMeViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddMeViewController") as! AddMeViewController
+        let navController = UINavigationController(rootViewController: AddMeViewController)
+        self.present(navController , animated: true) {}
+    }
+    
+    /// this func will be called when Snap button is clicked
+    @IBAction func btnSnaps(_ sender: UIButton) {
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SnapChatViewController") as! SnapChatViewController
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    /// this func will be called when Stories button is clicked
+    @IBAction func btnStories(_ sender: UIButton) {
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SnapChatViewController") as! SnapChatViewController
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
 

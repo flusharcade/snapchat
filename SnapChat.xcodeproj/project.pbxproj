@@ -52,7 +52,7 @@
 		EF61E68B211EC19F00EB7A0B /* more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E688211EC19E00EB7A0B /* more@3x.png */; };
 		EF61E68C211EC19F00EB7A0B /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E689211EC19F00EB7A0B /* more.png */; };
 		EF61E68D211EC19F00EB7A0B /* more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E68A211EC19F00EB7A0B /* more@2x.png */; };
-		EF61E690211EC46C00EB7A0B /* SnapchatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61E68F211EC46C00EB7A0B /* SnapchatViewController.swift */; };
+		EF61E690211EC46C00EB7A0B /* SnapChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61E68F211EC46C00EB7A0B /* SnapChatViewController.swift */; };
 		EF61E697211ED6F900EB7A0B /* chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E694211ED6F800EB7A0B /* chat@2x.png */; };
 		EF61E698211ED6F900EB7A0B /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E695211ED6F800EB7A0B /* chat.png */; };
 		EF61E699211ED6F900EB7A0B /* chat@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E696211ED6F800EB7A0B /* chat@3x.png */; };
@@ -69,6 +69,8 @@
 		EF61E6C1211EF55800EB7A0B /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6BE211EF55700EB7A0B /* search@3x.png */; };
 		EF61E6C2211EF55800EB7A0B /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6BF211EF55700EB7A0B /* search@2x.png */; };
 		EF61E6C3211EF55800EB7A0B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6C0211EF55800EB7A0B /* search.png */; };
+		EF73B99121218DFA00413AE4 /* SnapChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF73B99021218DFA00413AE4 /* SnapChatCell.swift */; };
+		EF73B9942121AB4400413AE4 /* ChatBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = EF73B9932121AB4400413AE4 /* ChatBubble.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,7 +142,7 @@
 		EF61E688211EC19E00EB7A0B /* more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@3x.png"; sourceTree = "<group>"; };
 		EF61E689211EC19F00EB7A0B /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
 		EF61E68A211EC19F00EB7A0B /* more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more@2x.png"; sourceTree = "<group>"; };
-		EF61E68F211EC46C00EB7A0B /* SnapchatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatViewController.swift; sourceTree = "<group>"; };
+		EF61E68F211EC46C00EB7A0B /* SnapChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatViewController.swift; sourceTree = "<group>"; };
 		EF61E694211ED6F800EB7A0B /* chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat@2x.png"; sourceTree = "<group>"; };
 		EF61E695211ED6F800EB7A0B /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		EF61E696211ED6F800EB7A0B /* chat@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat@3x.png"; sourceTree = "<group>"; };
@@ -157,6 +159,8 @@
 		EF61E6BE211EF55700EB7A0B /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
 		EF61E6BF211EF55700EB7A0B /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		EF61E6C0211EF55800EB7A0B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		EF73B99021218DFA00413AE4 /* SnapChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatCell.swift; sourceTree = "<group>"; };
+		EF73B9932121AB4400413AE4 /* ChatBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubble.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,10 +276,7 @@
 		EF61E636211E9B8F00EB7A0B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF61E6C0211EF55800EB7A0B /* search.png */,
-				EF61E6BF211EF55700EB7A0B /* search@2x.png */,
-				EF61E6BE211EF55700EB7A0B /* search@3x.png */,
-				EF61E6BC211EE99100EB7A0B /* round.png */,
+				EF73B9922121A67F00413AE4 /* Snaps&Stories */,
 				EF61E66F211EB46B00EB7A0B /* DashBoard */,
 				EF61E64E211EA92600EB7A0B /* AddMe */,
 				EF61E643211EA0BD00EB7A0B /* Settings */,
@@ -344,6 +345,7 @@
 		EF61E66F211EB46B00EB7A0B /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
+				EF61E6BC211EE99100EB7A0B /* round.png */,
 				EF61E695211ED6F800EB7A0B /* chat.png */,
 				EF61E694211ED6F800EB7A0B /* chat@2x.png */,
 				EF61E696211ED6F800EB7A0B /* chat@3x.png */,
@@ -369,7 +371,8 @@
 		EF61E68E211EC45F00EB7A0B /* Snapchat */ = {
 			isa = PBXGroup;
 			children = (
-				EF61E68F211EC46C00EB7A0B /* SnapchatViewController.swift */,
+				EF61E68F211EC46C00EB7A0B /* SnapChatViewController.swift */,
+				EF73B99021218DFA00413AE4 /* SnapChatCell.swift */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -410,6 +413,17 @@
 				EF61E6AB211EE34000EB7A0B /* UIDeviceOrientationExtension.swift */,
 			);
 			path = SwiftCamlib;
+			sourceTree = "<group>";
+		};
+		EF73B9922121A67F00413AE4 /* Snaps&Stories */ = {
+			isa = PBXGroup;
+			children = (
+				EF61E6C0211EF55800EB7A0B /* search.png */,
+				EF61E6BF211EF55700EB7A0B /* search@2x.png */,
+				EF61E6BE211EF55700EB7A0B /* search@3x.png */,
+				EF73B9932121AB4400413AE4 /* ChatBubble.png */,
+			);
+			path = "Snaps&Stories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +548,7 @@
 				EF61E68C211EC19F00EB7A0B /* more.png in Resources */,
 				EF61E68B211EC19F00EB7A0B /* more@3x.png in Resources */,
 				EF61E685211EC18800EB7A0B /* square.png in Resources */,
+				EF73B9942121AB4400413AE4 /* ChatBubble.png in Resources */,
 				EF61E675211EB46C00EB7A0B /* SnapChat.png in Resources */,
 				EF61E697211ED6F900EB7A0B /* chat@2x.png in Resources */,
 				EF61E639211E9BB400EB7A0B /* Splash.png in Resources */,
@@ -584,7 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF61E690211EC46C00EB7A0B /* SnapchatViewController.swift in Sources */,
+				EF61E690211EC46C00EB7A0B /* SnapChatViewController.swift in Sources */,
 				EF61E6B4211EE34000EB7A0B /* CameraManager.swift in Sources */,
 				EF61E6B2211EE34000EB7A0B /* ScanBarcodeCameraManager.swift in Sources */,
 				EF61E6B3211EE34000EB7A0B /* UIDeviceOrientationExtension.swift in Sources */,
@@ -597,6 +612,7 @@
 				EF61E6B5211EE34000EB7A0B /* ScanBarcodeCameraManagerDelegate.swift in Sources */,
 				EF04F60A211DABC80094CF9A /* DashboardViewController.swift in Sources */,
 				EF61E64D211EA13500EB7A0B /* AddMeViewController.swift in Sources */,
+				EF73B99121218DFA00413AE4 /* SnapChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,14 @@
 		EF04F60A211DABC80094CF9A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04F609211DABC80094CF9A /* DashboardViewController.swift */; };
 		EF04F60D211DAC080094CF9A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04F60C211DAC080094CF9A /* MobileCoreServices.framework */; };
 		EF04F60F211DAC140094CF9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04F60E211DAC140094CF9A /* UIKit.framework */; };
+		EF60CCF72122B3B40065DB2D /* camera_round@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60CCF42122B3B20065DB2D /* camera_round@3x.png */; };
+		EF60CCF82122B3B40065DB2D /* camera_round@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60CCF52122B3B20065DB2D /* camera_round@2x.png */; };
+		EF60CCF92122B3B40065DB2D /* camera_round.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60CCF62122B3B30065DB2D /* camera_round.png */; };
+		EF60CCFB2122D37F0065DB2D /* SnapChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60CCFA2122D37F0065DB2D /* SnapChatCell.swift */; };
+		EF60CCFE2122D75C0065DB2D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60CCFD2122D75B0065DB2D /* ChatViewController.swift */; };
+		EF60CD092122F3FA0065DB2D /* round_earth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60CD062122F3F80065DB2D /* round_earth@2x.png */; };
+		EF60CD0A2122F3FA0065DB2D /* round_earth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60CD072122F3F90065DB2D /* round_earth@3x.png */; };
+		EF60CD0B2122F3FA0065DB2D /* round_earth.png in Resources */ = {isa = PBXBuildFile; fileRef = EF60CD082122F3F90065DB2D /* round_earth.png */; };
 		EF61E639211E9BB400EB7A0B /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E638211E9BB400EB7A0B /* Splash.png */; };
 		EF61E640211EA02C00EB7A0B /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E63D211EA02C00EB7A0B /* Help.png */; };
 		EF61E641211EA02C00EB7A0B /* Help@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E63E211EA02C00EB7A0B /* Help@3x.png */; };
@@ -65,11 +73,9 @@
 		EF61E6B8211EE34000EB7A0B /* FocusLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6B0211EE34000EB7A0B /* FocusLine.swift */; };
 		EF61E6B9211EE34000EB7A0B /* FocusMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6B1211EE34000EB7A0B /* FocusMarker.swift */; };
 		EF61E6BB211EE36B00EB7A0B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF61E6BA211EE36B00EB7A0B /* ImageViewController.swift */; };
-		EF61E6BD211EE99100EB7A0B /* round.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6BC211EE99100EB7A0B /* round.png */; };
 		EF61E6C1211EF55800EB7A0B /* search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6BE211EF55700EB7A0B /* search@3x.png */; };
 		EF61E6C2211EF55800EB7A0B /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6BF211EF55700EB7A0B /* search@2x.png */; };
 		EF61E6C3211EF55800EB7A0B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6C0211EF55800EB7A0B /* search.png */; };
-		EF73B99121218DFA00413AE4 /* SnapChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF73B99021218DFA00413AE4 /* SnapChatCell.swift */; };
 		EF73B9942121AB4400413AE4 /* ChatBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = EF73B9932121AB4400413AE4 /* ChatBubble.png */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +112,14 @@
 		EF04F609211DABC80094CF9A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EF04F60C211DAC080094CF9A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EF04F60E211DAC140094CF9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF60CCF42122B3B20065DB2D /* camera_round@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_round@3x.png"; sourceTree = "<group>"; };
+		EF60CCF52122B3B20065DB2D /* camera_round@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_round@2x.png"; sourceTree = "<group>"; };
+		EF60CCF62122B3B30065DB2D /* camera_round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_round.png; sourceTree = "<group>"; };
+		EF60CCFA2122D37F0065DB2D /* SnapChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatCell.swift; sourceTree = "<group>"; };
+		EF60CCFD2122D75B0065DB2D /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EF60CD062122F3F80065DB2D /* round_earth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_earth@2x.png"; sourceTree = "<group>"; };
+		EF60CD072122F3F90065DB2D /* round_earth@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round_earth@3x.png"; sourceTree = "<group>"; };
+		EF60CD082122F3F90065DB2D /* round_earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round_earth.png; sourceTree = "<group>"; };
 		EF61E638211E9BB400EB7A0B /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash.png; sourceTree = "<group>"; };
 		EF61E63D211EA02C00EB7A0B /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help.png; sourceTree = "<group>"; };
 		EF61E63E211EA02C00EB7A0B /* Help@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help@3x.png"; sourceTree = "<group>"; };
@@ -155,11 +169,9 @@
 		EF61E6B0211EE34000EB7A0B /* FocusLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusLine.swift; sourceTree = "<group>"; };
 		EF61E6B1211EE34000EB7A0B /* FocusMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusMarker.swift; sourceTree = "<group>"; };
 		EF61E6BA211EE36B00EB7A0B /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		EF61E6BC211EE99100EB7A0B /* round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round.png; sourceTree = "<group>"; };
 		EF61E6BE211EF55700EB7A0B /* search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@3x.png"; sourceTree = "<group>"; };
 		EF61E6BF211EF55700EB7A0B /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		EF61E6C0211EF55800EB7A0B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
-		EF73B99021218DFA00413AE4 /* SnapChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChatCell.swift; sourceTree = "<group>"; };
 		EF73B9932121AB4400413AE4 /* ChatBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubble.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +260,7 @@
 		EF04F605211DAB4E0094CF9A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF60CCFC2122D75B0065DB2D /* Chat */,
 				EF61E68E211EC45F00EB7A0B /* Snapchat */,
 				EF61E64B211EA11D00EB7A0B /* AddMe */,
 				EF04F606211DAB7C0094CF9A /* Dashboard */,
@@ -273,9 +286,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF60CCFC2122D75B0065DB2D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EF60CCFD2122D75B0065DB2D /* ChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		EF60CCFF2122F04C0065DB2D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EF60CD082122F3F90065DB2D /* round_earth.png */,
+				EF60CD062122F3F80065DB2D /* round_earth@2x.png */,
+				EF60CD072122F3F90065DB2D /* round_earth@3x.png */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		EF61E636211E9B8F00EB7A0B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EF60CCFF2122F04C0065DB2D /* Chat */,
 				EF73B9922121A67F00413AE4 /* Snaps&Stories */,
 				EF61E66F211EB46B00EB7A0B /* DashBoard */,
 				EF61E64E211EA92600EB7A0B /* AddMe */,
@@ -345,7 +377,9 @@
 		EF61E66F211EB46B00EB7A0B /* DashBoard */ = {
 			isa = PBXGroup;
 			children = (
-				EF61E6BC211EE99100EB7A0B /* round.png */,
+				EF60CCF62122B3B30065DB2D /* camera_round.png */,
+				EF60CCF52122B3B20065DB2D /* camera_round@2x.png */,
+				EF60CCF42122B3B20065DB2D /* camera_round@3x.png */,
 				EF61E695211ED6F800EB7A0B /* chat.png */,
 				EF61E694211ED6F800EB7A0B /* chat@2x.png */,
 				EF61E696211ED6F800EB7A0B /* chat@3x.png */,
@@ -372,7 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				EF61E68F211EC46C00EB7A0B /* SnapChatViewController.swift */,
-				EF73B99021218DFA00413AE4 /* SnapChatCell.swift */,
+				EF60CCFA2122D37F0065DB2D /* SnapChatCell.swift */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -529,16 +563,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF61E6BD211EE99100EB7A0B /* round.png in Resources */,
 				EF61E658211EA98100EB7A0B /* AddFriend@2x.png in Resources */,
 				EF61E660211EA9A900EB7A0B /* ContactBook.png in Resources */,
 				EF61E66E211EAC1600EB7A0B /* DownArrow@2x.png in Resources */,
+				EF60CCF92122B3B40065DB2D /* camera_round.png in Resources */,
 				EF61E65A211EA98100EB7A0B /* AddFriend.png in Resources */,
 				EF61E659211EA98100EB7A0B /* AddFriend@3x.png in Resources */,
 				EF61E686211EC18800EB7A0B /* square@2x.png in Resources */,
 				EF61E67F211EC15000EB7A0B /* reversecam@2x.png in Resources */,
 				EF61E649211EA0BD00EB7A0B /* Settings@3x.png in Resources */,
 				EF61E653211EA92600EB7A0B /* AddedMeEmoji@3x.png in Resources */,
+				EF60CD092122F3FA0065DB2D /* round_earth@2x.png in Resources */,
 				EF61E6C3211EF55800EB7A0B /* search.png in Resources */,
 				EF61E687211EC18800EB7A0B /* square@3x.png in Resources */,
 				EF61E662211EA9E400EB7A0B /* user.png in Resources */,
@@ -557,6 +592,7 @@
 				EF61E6C1211EF55800EB7A0B /* search@3x.png in Resources */,
 				EF61E652211EA92600EB7A0B /* AddedMeEmoji@2x.png in Resources */,
 				EF61E642211EA02C00EB7A0B /* Help@2x.png in Resources */,
+				EF60CD0B2122F3FA0065DB2D /* round_earth.png in Resources */,
 				EF61E680211EC15000EB7A0B /* reversecam.png in Resources */,
 				EF61E66C211EAC1600EB7A0B /* DownArrow@3x.png in Resources */,
 				EF61E673211EB46C00EB7A0B /* SnapChat@2x.png in Resources */,
@@ -574,7 +610,10 @@
 				EF61E681211EC15000EB7A0B /* reversecam@3x.png in Resources */,
 				EF61E648211EA0BD00EB7A0B /* Settings@2x.png in Resources */,
 				EF61E679211EC12200EB7A0B /* flash@2x.png in Resources */,
+				EF60CCF82122B3B40065DB2D /* camera_round@2x.png in Resources */,
+				EF60CD0A2122F3FA0065DB2D /* round_earth@3x.png in Resources */,
 				EF04F5DD211DA8220094CF9A /* Main.storyboard in Resources */,
+				EF60CCF72122B3B40065DB2D /* camera_round@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,7 +651,8 @@
 				EF61E6B5211EE34000EB7A0B /* ScanBarcodeCameraManagerDelegate.swift in Sources */,
 				EF04F60A211DABC80094CF9A /* DashboardViewController.swift in Sources */,
 				EF61E64D211EA13500EB7A0B /* AddMeViewController.swift in Sources */,
-				EF73B99121218DFA00413AE4 /* SnapChatCell.swift in Sources */,
+				EF60CCFE2122D75C0065DB2D /* ChatViewController.swift in Sources */,
+				EF60CCFB2122D37F0065DB2D /* SnapChatCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

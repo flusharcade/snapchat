@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SnapChatViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SnapChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     //=================
     // MARK: - Overrides
@@ -15,13 +15,16 @@ class SnapChatViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setNavigationBarAttributes()
         // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.setNavigationBarAttributes()
     }
     
     //=================
@@ -36,14 +39,19 @@ class SnapChatViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 20.0/255.0, green: 150.0/255.0, blue: 117.0/255.0, alpha: 1.0)
     }
     
-    /// this func will return the number of records to be displayed in collection view
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    /// this func will return the number of records to be displayed in table view
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    /// this func will display content of each row of collection view
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : SnapChatCell =  collectionView.dequeueReusableCell(withReuseIdentifier: "SnapChatCell", for: indexPath) as! SnapChatCell
+    /// this func will display content of each row of table view
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : SnapChatCell = tableView.dequeueReusableCell(withIdentifier: "SnapChatCell", for: indexPath) as! SnapChatCell
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ChatViewController = self.storyboard?.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        self.navigationController?.pushViewController(ChatViewController, animated: true)
     }
 }

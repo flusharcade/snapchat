@@ -57,7 +57,7 @@ class DashboardViewController: UIViewController, UIImagePickerControllerDelegate
             
             /// Alert will be displayed if any error is there in camera setup
             let alertController = UIAlertController(title: "Error",message: error.localizedDescription,preferredStyle: .alert)
-            alertController.addAction(.init(title: "ok", style: .default, handler: nil))
+            alertController.addAction(.init(title: "OK", style: .default, handler: nil))
             present(alertController, animated: true, completion: nil)
         }
     }
@@ -186,14 +186,14 @@ class DashboardViewController: UIViewController, UIImagePickerControllerDelegate
     
     /// this func will be called when Snap button is clicked
     @IBAction func btnSnaps(_ sender: UIButton) {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SnapChatViewController") as! SnapChatViewController
-        self.navigationController?.pushViewController(controller, animated: true)
+        let SnapChatViewController = self.storyboard?.instantiateViewController(withIdentifier: "SnapChatViewController") as! SnapChatViewController
+        self.navigationController?.pushViewController(SnapChatViewController, animated: true)
     }
     
     /// this func will be called when Stories button is clicked
     @IBAction func btnStories(_ sender: UIButton) {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "SnapChatViewController") as! SnapChatViewController
-        self.navigationController?.pushViewController(controller, animated: true)
+        let SnapChatViewController = self.storyboard?.instantiateViewController(withIdentifier: "SnapChatViewController") as! SnapChatViewController
+        self.navigationController?.pushViewController(SnapChatViewController, animated: true)
     }
 }
 

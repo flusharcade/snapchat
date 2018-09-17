@@ -369,7 +369,7 @@
         <!--Chat View Controller-->
         <scene sceneID="VoI-nN-RQ2">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="Rj0-Ox-K91" customClass="ChatViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="Rj0-Ox-K91" userLabel="Chat View Controller" customClass="ChatViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jwg-P4-heh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,6 +427,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MMO-kM-zvW"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Chat" id="5x1-jP-VrK">
+                        <barButtonItem key="leftBarButtonItem" image="SideMenu.png" id="Dae-Py-nIZ">
+                            <color key="tintColor" red="0.1960784314" green="0.63529411759999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Next.png" id="Q7F-Jv-C5i">
+                            <color key="tintColor" red="0.1960784314" green="0.63529411759999999" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="viewBGSendMsg" destination="dWz-YC-v5q" id="TiH-WG-ovT"/>
                     </connections>
@@ -501,7 +509,9 @@
         <image name="ContactBook.png" width="30" height="30"/>
         <image name="DownArrow.png" width="20" height="20"/>
         <image name="Help.png" width="30" height="30"/>
+        <image name="Next.png" width="30" height="30"/>
         <image name="Settings.png" width="30" height="30"/>
+        <image name="SideMenu.png" width="30" height="30"/>
         <image name="SnapChat.png" width="30" height="30"/>
         <image name="camera_round.png" width="60" height="60"/>
         <image name="chat.png" width="30" height="30"/>

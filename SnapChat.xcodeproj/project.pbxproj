@@ -77,6 +77,12 @@
 		EF61E6C2211EF55800EB7A0B /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6BF211EF55700EB7A0B /* search@2x.png */; };
 		EF61E6C3211EF55800EB7A0B /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E6C0211EF55800EB7A0B /* search.png */; };
 		EF73B9942121AB4400413AE4 /* ChatBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = EF73B9932121AB4400413AE4 /* ChatBubble.png */; };
+		EFCD70D32123E54E0043DA03 /* SideMenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCD70D02123E54D0043DA03 /* SideMenu@2x.png */; };
+		EFCD70D42123E54E0043DA03 /* SideMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCD70D12123E54D0043DA03 /* SideMenu.png */; };
+		EFCD70D52123E54E0043DA03 /* SideMenu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCD70D22123E54D0043DA03 /* SideMenu@3x.png */; };
+		EFCD70D92123E5740043DA03 /* Next@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCD70D62123E5730043DA03 /* Next@3x.png */; };
+		EFCD70DA2123E5740043DA03 /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCD70D72123E5730043DA03 /* Next.png */; };
+		EFCD70DB2123E5740043DA03 /* Next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCD70D82123E5740043DA03 /* Next@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +179,12 @@
 		EF61E6BF211EF55700EB7A0B /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		EF61E6C0211EF55800EB7A0B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		EF73B9932121AB4400413AE4 /* ChatBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBubble.png; sourceTree = "<group>"; };
+		EFCD70D02123E54D0043DA03 /* SideMenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SideMenu@2x.png"; sourceTree = "<group>"; };
+		EFCD70D12123E54D0043DA03 /* SideMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SideMenu.png; sourceTree = "<group>"; };
+		EFCD70D22123E54D0043DA03 /* SideMenu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SideMenu@3x.png"; sourceTree = "<group>"; };
+		EFCD70D62123E5730043DA03 /* Next@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next@3x.png"; sourceTree = "<group>"; };
+		EFCD70D72123E5730043DA03 /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
+		EFCD70D82123E5740043DA03 /* Next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +312,12 @@
 				EF60CD082122F3F90065DB2D /* round_earth.png */,
 				EF60CD062122F3F80065DB2D /* round_earth@2x.png */,
 				EF60CD072122F3F90065DB2D /* round_earth@3x.png */,
+				EFCD70D12123E54D0043DA03 /* SideMenu.png */,
+				EFCD70D02123E54D0043DA03 /* SideMenu@2x.png */,
+				EFCD70D22123E54D0043DA03 /* SideMenu@3x.png */,
+				EFCD70D72123E5730043DA03 /* Next.png */,
+				EFCD70D82123E5740043DA03 /* Next@2x.png */,
+				EFCD70D62123E5730043DA03 /* Next@3x.png */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -574,12 +592,14 @@
 				EF61E649211EA0BD00EB7A0B /* Settings@3x.png in Resources */,
 				EF61E653211EA92600EB7A0B /* AddedMeEmoji@3x.png in Resources */,
 				EF60CD092122F3FA0065DB2D /* round_earth@2x.png in Resources */,
+				EFCD70D52123E54E0043DA03 /* SideMenu@3x.png in Resources */,
 				EF61E6C3211EF55800EB7A0B /* search.png in Resources */,
 				EF61E687211EC18800EB7A0B /* square@3x.png in Resources */,
 				EF61E662211EA9E400EB7A0B /* user.png in Resources */,
 				EF61E6C2211EF55800EB7A0B /* search@2x.png in Resources */,
 				EF61E698211ED6F900EB7A0B /* chat.png in Resources */,
 				EF61E647211EA0BD00EB7A0B /* Settings.png in Resources */,
+				EFCD70DA2123E5740043DA03 /* Next.png in Resources */,
 				EF61E68C211EC19F00EB7A0B /* more.png in Resources */,
 				EF61E68B211EC19F00EB7A0B /* more@3x.png in Resources */,
 				EF61E685211EC18800EB7A0B /* square.png in Resources */,
@@ -598,13 +618,17 @@
 				EF61E673211EB46C00EB7A0B /* SnapChat@2x.png in Resources */,
 				EF61E66D211EAC1600EB7A0B /* DownArrow.png in Resources */,
 				EF61E674211EB46C00EB7A0B /* SnapChat@3x.png in Resources */,
+				EFCD70DB2123E5740043DA03 /* Next@2x.png in Resources */,
 				EF04F5E2211DA8250094CF9A /* LaunchScreen.storyboard in Resources */,
+				EFCD70D42123E54E0043DA03 /* SideMenu.png in Resources */,
 				EF61E641211EA02C00EB7A0B /* Help@3x.png in Resources */,
 				EF61E640211EA02C00EB7A0B /* Help.png in Resources */,
 				EF61E65E211EA9A900EB7A0B /* ContactBook@2x.png in Resources */,
+				EFCD70D92123E5740043DA03 /* Next@3x.png in Resources */,
 				EF61E654211EA92600EB7A0B /* AddedMeEmoji.png in Resources */,
 				EF61E68D211EC19F00EB7A0B /* more@2x.png in Resources */,
 				EF61E699211ED6F900EB7A0B /* chat@3x.png in Resources */,
+				EFCD70D32123E54E0043DA03 /* SideMenu@2x.png in Resources */,
 				EF04F5DF211DA8250094CF9A /* Assets.xcassets in Resources */,
 				EF61E67A211EC12200EB7A0B /* flash@3x.png in Resources */,
 				EF61E681211EC15000EB7A0B /* reversecam@3x.png in Resources */,
